@@ -5,13 +5,13 @@ let hamburger = document.getElementById('hamburger');
 let ul = document.getElementById('ul')
 hamburger.addEventListener('click', toggle);
 function toggle(){
-    if(ul.classList.contains('ul-none')){
+    if(ul.classList.contains('ul-primary')){
         ul.classList.add('ul-block');
-        ul.classList.remove('ul-none');
+        ul.classList.remove('ul-primary');
        
     }
     else if(ul.classList.contains('ul-block')){
-        ul.classList.add('ul-none');
+        ul.classList.add('ul-primary');
         ul.classList.remove('ul-block');
     }
 }
